@@ -10,7 +10,8 @@ public class Piece : MonoBehaviour {
 
 	IEnumerator FallStep(){
 		while(falling == true){
-			transform.localPosition = new Vector3(0, 1, 0);
+			//transform.localPosition = new Vector3(0, 1, 0);
+			transform.Translate(new Vector3(0, -1, 0));
 			yield return new WaitForSeconds(fallStepSpeed);
 		}
 		yield return null;
