@@ -34,7 +34,7 @@ public class BlockRotate : MonoBehaviour {
 		}
 		else if (transform.eulerAngles.z >= 270){
 
-			//transform.localPosition = new Vector3.(naturalXPos, naturalYPos, 0);
+			transform.localPosition = new Vector3(naturalXPos, naturalYPos, 0);
 			transform.Rotate(Vector3.forward *90);
 
 		}
